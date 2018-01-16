@@ -169,6 +169,24 @@ body{
 
 }
 
+.chat-page .top-bar{
+	padding: 12px;
+	box-sizing: border-box;
+}
+
+.chat-page .chat-name{
+	float: left;
+}
+.chat-page-name{
+	display: inline-block;
+	float: left;
+	padding: 20px;
+}
+
+.chat-body{
+	
+}
+
 
 .base-chat-text{
 	background-color: #027733;
