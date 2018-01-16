@@ -28,15 +28,15 @@ body{
 }
 
 .frame{
-	background-color: #637;
+	background-color: rgba(0,0,0,0.4);
 	height: 540px;
 	width: 300px;
 	margin: 0 20px;
 	display: inline-block;
 	border-radius: 25px;
-	box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+	box-shadow: 2px 5px 15px rgba(0,0,0,0.4);
 	box-sizing: border-box;
-	padding: 10px;
+	padding: 20px 10px;
 	text-align: center;
 	float: left;
 }
@@ -48,6 +48,8 @@ body{
 	width: 280px;
 	background-color: #022;
 	box-sizing: border-box;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.4) inset;
+	border-radius: 2px;
 }
 
 .top-bar{
@@ -137,6 +139,22 @@ body{
 	background-color: #629;
 	padding: 5px;
 	box-sizing: border-box;
+	display: inline-block;
+	padding: 15px;
+	max-width: 180px;
+}
+
+.chat-name{
+	color: #f3f4f5;
+}
+.new-chat-status{
+	display: block;
+	height: 8px;
+	width: 10px;
+	background-color: orange;
+	float: right;
+	border-radius: 50%;
+
 }
 
 
@@ -144,6 +162,4 @@ body{
 	background-color: #027733;
 	height: 15%;
 	width: 280px;
-	position: absolute;
-	bottom: 0;
 }
