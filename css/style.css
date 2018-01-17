@@ -147,6 +147,9 @@ body{
 	float: right;
 	border-radius: 50%;
 	margin-top: -15px;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 0 6px rgba(0,0,0,0.5);
 }
 .chat-list-name{
 	box-sizing: border-box;
@@ -242,10 +245,11 @@ body{
 }
 
 .base-chat-text .chat-image{
-	height: 30px;
-	width: 30px;
-	padding: 10px;
+	height: 34px;
+	width: 34px;
+	padding: 5px;
 	display: inline-block;	
+	margin-top: 5px;
 }
 .chat-text{
 	background-color: #289222;
@@ -268,4 +272,21 @@ body{
 	padding: 5px;
 	box-sizing: border-box;
 	overflow-wrap:normal;
+}
+
+.send{
+	display: inline-block;
+	background-color: #712129;
+	box-sizing: border-box;
+	border-radius: 50%;
+	height: 34px;
+	padding: 5px;
+	width: 34px;
+	margin-top: 10px;
+
+}
+
+.send-button{
+	color: #fff;
+	box-sizing: border-box;
 }
