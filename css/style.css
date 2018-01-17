@@ -134,8 +134,8 @@ body{
 .profile-image{
 	background-color: #fff;
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 100%;
+	height: 100%;
 	display: block;
 }
 
@@ -194,10 +194,23 @@ body{
 }
 .chat{
 	background-color: rgba(23,23,23,0.5);
+	box-sizing: border-box;
 	height: 100%;
 	padding: 5px;
-
+	overflow-y: scroll;
 }
+*::-webkit-scrollbar {
+	width: 6px;	
+}
+*::-webkit-scrollbar-track {
+	background-color: rgba(255,255,255,0.2);
+	box-shadow: inset 0 0 2px rgba(0,0,0,0.4);
+}
+*::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,0.2);
+	outline: 1px solid slategrey;
+}
+
 
 .text{
 	background-color: #582;
@@ -224,4 +237,35 @@ body{
 	background-color: #027733;
 	height: 15%;
 	width: 280px;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+.base-chat-text .chat-image{
+	height: 30px;
+	width: 30px;
+	padding: 10px;
+	display: inline-block;	
+}
+.chat-text{
+	background-color: #289222;
+	display: inline-block;
+	float: left;
+	height: 60px;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.text-input{
+	max-height: 60px;
+	min-height: 60px;
+	display: block;
+	max-width: 180px;
+	min-width: 180px;
+	columns: 5;
+	border: transparent;
+	background-color: transparent;
+	padding: 5px;
+	box-sizing: border-box;
+	overflow-wrap:normal;
 }
