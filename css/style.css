@@ -29,7 +29,7 @@ body{
 }
 
 .frame{
-	background-color: rgba(0,50, 100, 0.5);
+	background-color: rgba(0,0,0, 0.89);
 	height: 540px;
 	width: 300px;
 	margin: 0 60px;
@@ -103,8 +103,9 @@ body{
 	background-color: rgba(0,50,100,0.05);
 	display: block;
 	width: 100%;
-	scroll-behavior: smooth;
+	height: 420px;
 	margin: 0px auto;
+	overflow-y: scroll;
 }
 
 .chat-list-item{
@@ -168,6 +169,7 @@ body{
 	background-color: orange;
 	float: right;
 	border-radius: 50%;
+	margin-top: -20px;
 
 }
 
@@ -179,7 +181,8 @@ body{
 	
 }
 .chat-page .profile-image{
-	border: solid 1px #f3f3f3;
+	border: solid 1.5px;
+	border-color: rgba(255,255,255,0.1) !important;
 }
 
 .chat-page .chat-name{
@@ -200,17 +203,15 @@ body{
 	height: 70%;
 	box-shadow: 0px -5px 10px rgba(0,0,0,0.2) inset;
 	padding: 5px;
-	box-sizing: border-box;
 }
 .chat{
-	background-color: rgba(23,23,23,0.5);
-	box-sizing: border-box;
+	background-color: rgba(255,255,255,0.5);
 	height: 100%;
 	padding: 5px;
 	overflow-y: scroll;
 }
 *::-webkit-scrollbar {
-	width: 6px;	
+	width: 5px;	
 }
 *::-webkit-scrollbar-track {
 	background-color: rgba(255,255,255,0.2);
@@ -226,29 +227,29 @@ body{
 	background-color: #582;
 	display: inline-block;
 	max-width: 80%;
-	padding: 5px;
-	margin: 5px;
+	padding: 12px;
+	margin: 12px;
+	box-shadow: 0px 7px 12px rgba(0,50,100,0.07)
 }
 .sender{
 	float: right;
-	background-color: #229202;
+	background: linear-gradient(to left, rgba(0,50,100,0.2), rgba(0,50,100,0.1));
 	border-radius: 10px 10px 0 10px ;
 	text-align: right;
 }
 .reciever{
 	float: left;
-	background-color: #628920;
+	background: linear-gradient(to right, rgba(50,100,0, 0.2), rgba(50,100,0, 0.1));
 	border-radius: 0 10px 10px 10px ;
 	text-align: left;
 }
 
 
 .base-chat-text{
-	background-color: #027733;
+	background: linear-gradient(to top right, rgba(0,50,100, 0.2), rgba(0,50,100,0.95));
 	height: 15%;
 	width: 280px;
-	box-sizing: border-box;
-	padding: 5px;
+	padding: 7px;
 }
 
 .base-chat-text .chat-image{
@@ -256,15 +257,16 @@ body{
 	width: 34px;
 	padding: 5px;
 	display: inline-block;	
-	margin-top: 5px;
+	margin-top: 10px;
 }
 .chat-text{
-	background-color: #289222;
+	background-color: rgba(255,255,255,0.4);
+	box-shadow: inset 0 0 15px rgba(255,255,255,0.4);
 	display: inline-block;
 	float: left;
 	height: 60px;
-	box-sizing: border-box;
 	border-radius: 5px;
+	border: transparent;
 }
 
 .text-input{
@@ -274,16 +276,16 @@ body{
 	max-width: 180px;
 	min-width: 180px;
 	columns: 5;
-	border: transparent;
+	border: solid thin transparent;
 	background-color: transparent;
 	padding: 5px;
-	box-sizing: border-box;
-	overflow-wrap:normal;
+	color: #f3f3f3;
 }
 
 .send{
 	display: inline-block;
-	background-color: #712129;
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 	box-sizing: border-box;
 	border-radius: 50%;
 	height: 34px;
@@ -294,6 +296,5 @@ body{
 }
 
 .send-button{
-	color: #fff;
-	box-sizing: border-box;
+	color: rgb(0,50,100);
 }
