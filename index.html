@@ -4,6 +4,30 @@
 	<title>ChatApp</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+	<script>
+		function displayTime() {
+			var weekday = new Array(7);
+			weekday[0] =  "Sunday";
+			weekday[1] = "Monday";
+			weekday[2] = "Tuesday";
+			weekday[3] = "Wednesday";
+			weekday[4] = "Thursday";
+			weekday[5] = "Friday";
+			weekday[6] = "Saturday";
+			var day = document.getElementById("day");
+			var time = document.getElementById("time");
+			var time_type = document.getElementById("time-type");
+			var now = new Date();
+
+			var am_pm = now.getHours() >= 12 ? "PM" : "AM";
+
+			day.innerHTML = weekday[now.getDay()];
+			time.innerHTML = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric',  hour12: true });
+			time_type.innerHTML = am_pm;
+			setTimeout(displayTime, 1000);
+		}
+		window.onload = displayTime;
+	</script>
 </head>
 <body>
 	<section class="board">
@@ -11,81 +35,93 @@
 			<div class="inner-frame">
 				<div class="top-bar">
 					<div class="top-clock">
-						<span class="day">Tuesday</span>
-						<span class="time">10:59</span>
-						<span class="time-type">PM</span>
+						<span class="day" id="day"></span>
+						<span class="time" id="time"></span>
+						<span class="time-type" id="time-type"></span>
 					</div>
 				</div>
 				<div class="list-block">
 					<ul class="chat-list">
 						<li class="chat-list-item">
-							<div class="chat-item">
-								<div class="chat-image">
-									<img class="profile-image" src="./img/laura.png">
-									<span class="online-status"> </span>
+							<a href="">
+								<div class="chat-item">
+									<div class="chat-image">
+										<img class="profile-image" src="./img/laura.png">
+										<span class="online-status"> </span>
+									</div>
+									<div class="chat-list-name">
+										<span class="chat-name">Laura</span>
+										<div class="new-chat-status"></div>
+									</div>
 								</div>
-								<div class="chat-list-name">
-									<span class="chat-name">Laura</span>
-									<div class="new-chat-status"></div>
-								</div>
-							</div>
+							</a>
 						</li>
 						<li class="chat-list-item">
-							<div class="chat-item">
-								<div class="chat-image">
-									<img class="profile-image" src="./img/joshua.png">
-									<span class="online-status"> </span>
+							<a href="">
+								<div class="chat-item">
+									<div class="chat-image">
+										<img class="profile-image" src="./img/joshua.png">
+										<span class="online-status"> </span>
+									</div>
+									<div class="chat-list-name">
+										<span class="chat-name">Joshua</span>
+										<span class="new-chat-status"></span>
+									</div>
 								</div>
-								<div class="chat-list-name">
-									<span class="chat-name">Joshua</span>
-									<span class="new-chat-status"></span>
-								</div>
-							</div>
+							</a>
 						</li>
 						<li class="chat-list-item">
-							<div class="chat-item">
-								<div class="chat-image">
-									<img class="profile-image" src="./img/hs.jpg">
-									<span class="online-status"> </span>
+							<a href="">
+								<div class="chat-item">
+									<div class="chat-image">
+										<img class="profile-image" src="./img/hs.jpg">
+										<span class="online-status"> </span>
+									</div>
+									<div class="chat-list-name">
+										<span class="chat-name">HS</span>
+										<span class="new-chat-status"></span>
+									</div>
 								</div>
-								<div class="chat-list-name">
-									<span class="chat-name">HS</span>
-									<span class="new-chat-status"></span>
-								</div>
-							</div>
+							</a>
 						</li>
 						<li class="chat-list-item">
-							<div class="chat-item">
-								<div class="chat-image">
-									<img class="profile-image" src="./img/swap.jpg">
-									<span class="online-status offline"> </span>
+							<a href="">
+								<div class="chat-item">
+									<div class="chat-image">
+										<img class="profile-image" src="./img/swap.jpg">
+										<span class="online-status offline"> </span>
+									</div>
+									<div class="chat-list-name">
+										<span class="chat-name">SwapSpace</span>
+									</div>
 								</div>
-								<div class="chat-list-name">
-									<span class="chat-name">SwapSpace</span>
-								</div>
-							</div>
+							</a>
 						</li>
 						<li class="chat-list-item">
-							<div class="chat-item">
-								<div class="chat-image">
-									<img class="profile-image" src="./img/pal.jpg">
-									<span class="online-status offline"> </span>
+							<a href="">
+								<div class="chat-item">
+									<div class="chat-image">
+										<img class="profile-image" src="./img/pal.jpg">
+										<span class="online-status offline"> </span>
+									</div>
+									<div class="chat-list-name">
+										<span class="chat-name">Pal</span>
+									</div>
 								</div>
-								<div class="chat-list-name">
-									<span class="chat-name">Pal</span>
-								</div>
-							</div>
+							</a>
 						</li>
 						<li class="chat-list-item">
-							<div class="chat-item">
-								<div class="chat-image">
-									<img class="profile-image" src="./img/pal.jpg">
-									<span class="online-status"> </span>
+							<a href="">
+								<div class="chat-item">
+									<div class="chat-image">
+										<img class="profile-image" src="./img/pal.jpg">
+										<span class="online-status"> </span>
+									</div>
+									<div class="chat-list-name">
+										<span class="chat-name">Oga Bjay</span>
+									</div>
 								</div>
-								<div class="chat-list-name">
-									<span class="chat-name">Oga Bjay</span>
-								</div>
-							</div>
+							</a>
 						</li>
 					</ul>
 				</div>	

@@ -1,13 +1,24 @@
 *{
 	padding: 0;
-	font-family: monospace;
 	box-sizing: border-box;
+	font-family: Open-Sans, Helvetica;
 }
 @font-face{
 	font-family: Museo-Sans;
 	src:url(../font/MuseoSans500.otf);
 	font-weight: bold;
 }
+@font-face{
+	font-family: Open-Sans;
+	src:url(../font/Lato-Regular.ttf);	
+	font-weight: bold;
+}
+@font-face{
+	font-family: Helvetica;
+	src:url(../font/HelveticaNeueLTPro-Roman.otf);	
+	font-weight: bold;
+}
+
 ul *{
 	padding: 0;
 	margin: 0;
@@ -63,6 +74,7 @@ body{
 	display: block;
 	height: 15%;
 	width: 100%;
+	font-family: monospace;
 }
 
 .top-clock{
@@ -95,6 +107,7 @@ body{
 	margin-left: -10px;
 	margin-top: -3px;
 	padding: 3px;
+	font-family: monospace;
 }
 
 .list-block{
@@ -115,9 +128,15 @@ body{
 
 .chat-list-item{
 	background-color: rgba(255,255,255,0.9);
-	border-bottom: solid thin rgba(0,50,100,0.5);
+	border-bottom: solid thin rgba(0,50,100,0.3);
 	padding: 12px;
 	box-shadow: 0px -4px 10px rgba(0,50,100,0.1) inset;
+	font-family: Open-Sans;
+}
+.chat-list-item:hover{
+	background-color: rgba(255,255,255,0.95);
+	border-bottom: solid thin rgba(0,50,100,0.4);
+	box-shadow: 0px -5px 10px rgba(0,50,100,0.05) inset;
 }
 .chat-item{
 	text-align: left;
@@ -177,7 +196,7 @@ body{
 	background-color: orange;
 	float: right;
 	border-radius: 50%;
-	margin-top: -20px;
+	margin-top: 0px;
 
 }
 
