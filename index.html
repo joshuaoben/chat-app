@@ -22,7 +22,7 @@
 			var am_pm = now.getHours() >= 12 ? "PM" : "AM";
 
 			day.innerHTML = weekday[now.getDay()];
-			time.innerHTML = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric',  hour12: true });
+			time.innerHTML = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric'});
 			time_type.innerHTML = am_pm;
 			setTimeout(displayTime, 1000);
 		}

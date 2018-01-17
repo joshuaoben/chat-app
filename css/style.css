@@ -132,11 +132,21 @@ body{
 	padding: 12px;
 	box-shadow: 0px -4px 10px rgba(0,50,100,0.1) inset;
 	font-family: Open-Sans;
+	-moz-transition: background-color 1s, border-bottom 1s, box-shadow 1s, padding 1s;
+	transition: border-bottom 1s, background-color 1s, box-shadow 1s, padding 1s;
 }
 .chat-list-item:hover{
+	padding: 5px;
 	background-color: rgba(255,255,255,0.95);
 	border-bottom: solid thin rgba(0,50,100,0.4);
 	box-shadow: 0px -5px 10px rgba(0,50,100,0.05) inset;
+}
+.chat-list-item:hover .chat-image{
+	width: 60px;
+	height: 60px;
+}
+.chat-list-item:hover .chat-list-name{
+	padding: 15px 15px;
 }
 .chat-item{
 	text-align: left;
@@ -150,6 +160,7 @@ body{
 	height: 50px;
 	float: left;
 	text-align: center;	
+	transition:width 1.5s, height 1.5s;
 }
 
 .profile-image{
@@ -183,6 +194,7 @@ body{
 	padding: 5px 15px;
 	max-width: 180px;
 	margin-top: 4px;
+	transition: padding 2s;
 }
 
 .chat-name{
@@ -287,8 +299,9 @@ body{
 	margin-top: 10px;
 }
 .chat-text{
-	background-color: rgba(255,255,255,0.4);
-	box-shadow: inset 0 0 15px rgba(255,255,255,0.4);
+	/*background-color: rgba(255,255,255,0.2);*/
+	background: radial-gradient(rgba(0,50,100,0.1), rgba(255,255,255,0.1));
+	box-shadow: inset 0 0 15px rgba(255,255,255,0.1);
 	display: inline-block;
 	float: left;
 	height: 60px;
@@ -311,7 +324,7 @@ body{
 
 .send{
 	display: inline-block;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.7);
 	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 	box-sizing: border-box;
 	border-radius: 50%;
